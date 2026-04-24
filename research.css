@@ -1,0 +1,99 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* SECTION */
+.research-section {
+  background: linear-gradient(135deg, #fff8f0, #ffe7d1);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #ff6600;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CONTAINER */
+.research-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.research-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 330px;
+  padding: 30px 25px;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.research-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(255, 102, 0, 0.3);
+}
+
+.research-card h3 {
+  color: #ff6600;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.research-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e65500;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .research-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .research-card {
+    width: 90%;
+    text-align: center;
+  }
+
+  .research-card p {
+    text-align: center;
+  }
+}

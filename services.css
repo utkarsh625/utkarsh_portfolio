@@ -1,0 +1,109 @@
+/* 🌐 RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🔳 CONTAINER */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+  background: #f9fafc;
+}
+
+/* 🧩 CARD */
+.card {
+  background: #fff;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼️ IMAGE */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background-color: #ddd;
+  transition: transform 0.4s ease;
+}
+
+/* ✨ IMAGE HOVER ZOOM EFFECT */
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/* 📄 CONTENT */
+.card-content {
+  padding: 20px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.card-content h1 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ff6600;
+  transition: color 0.3s ease;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* 🔸 OPTIONAL TEXT HOVER COLOR */
+.card:hover .card-content h1 {
+  color: #e05500;
+}
+
+/* 📱 MEDIA QUERY - TABLET */
+@media (max-width: 992px) {
+  .card-container {
+    gap: 20px;
+    padding: 50px 5%;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+/* 📱 MEDIA QUERY - MOBILE */
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .card-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+}
